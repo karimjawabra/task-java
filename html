@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist js project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h2>TodoInput</h2> 
+  <div class="input-container">
+    <div class="input-group">
+      <img src="image/icon.png" alt="icon">
+      <input type="text" id="newTodo" placeholder="New Todo">
+    </div>
+    <div id="inputError" style="color: red; font-size: 14px;"></div>
+     <button class="btn" id="addBtn">Add new task</button>
+  </div>
+  <h2>Todo List</h2>
+   <div class="tabs">
+    <button data-filter="all">All</button>
+    <button data-filter="done">Done</button>
+    <button data-filter="todo">Todo</button>
+  </div>
+   <div class="task-list" id="taskList"></div>
 
+    <div class="footer-buttons">
+    <button class="delete-done">Delete Done Tasks</button>
+     <button class="delete-all">Delete All Tasks</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
